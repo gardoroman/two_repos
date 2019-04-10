@@ -2,9 +2,9 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config two_repos, env: Mix.env()
+config :two_repos, env: Mix.env()
 
 
-config two_repos, ecto_repos: [RepoOne.Repo]
+config :two_repos, ecto_repos: [RepoOne.Repo]
 
 import_config("dev.exs")
