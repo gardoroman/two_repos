@@ -8,7 +8,8 @@ defmodule TwoRepos.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      RepoOne.Repo
+      TwoRepos.Repo,
+      TwoRepos.WorstOfRepos.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
