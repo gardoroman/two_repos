@@ -5,6 +5,6 @@ use Mix.Config
 config :two_repos, env: Mix.env()
 
 
-config :two_repos, ecto_repos: [RepoOne.Repo]
+config :two_repos, ecto_repos: [TwoRepos.BestOfRepos.Repo]
 
 import_config("dev.exs")
