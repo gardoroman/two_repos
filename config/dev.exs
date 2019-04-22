@@ -10,4 +10,5 @@ config :two_repos, TwoRepos.WorstOfRepos.Repo,
   database: "two_repos_demo",
   username: "worst",
   password: "...",
-  hostname: "localhost"
+  hostname: "localhost",
+  priv: "priv/worst_repo"
