@@ -8,7 +8,7 @@ defmodule TwoRepos.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      TwoRepos.Repo,
+      TwoRepos.BestOfRepos.Repo,
       TwoRepos.WorstOfRepos.Repo
     ]
 
